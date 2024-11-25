@@ -1645,9 +1645,9 @@ fn Renderer(comptime WriterType: type) type {
                 \\        pub const Wrapper = {1s}Wrapper(apis);
                 \\
                 \\        handle: {0s},
-                \\        wrapper: *const Wrapper,
+                \\        wrapper: Wrapper,
                 \\
-                \\        pub fn init(handle: {0s}, wrapper: *const Wrapper) Self {{
+                \\        pub fn init(handle: {0s}, wrapper: Wrapper) Self {{
                 \\            return .{{
                 \\                .handle = handle,
                 \\                .wrapper = wrapper,
